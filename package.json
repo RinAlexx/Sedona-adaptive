@@ -1,23 +1,23 @@
 {
   "name": "sedona",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "editorconfig-checker",
+    "start": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RinAlexx/Sedona-adaptive.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RinAlexx/Sedona-adaptive/issues"
-  },
-  "homepage": "https://github.com/RinAlexx/Sedona-adaptive#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+      "editorconfig-checker": "^5.0.1",
+      "gulp": "^4.0.2"
+  },
+  "browserslist": [
+      "last 2 versions",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all",
+      "not < 0.25%"
+  ],
+  "engines": {
+      "node": "^16"
+  },
+  "type": "module"
 }
