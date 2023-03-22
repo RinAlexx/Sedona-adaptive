@@ -2,22 +2,26 @@
   "name": "sedona",
   "version": "1.0.0",
   "scripts": {
-    "test": "editorconfig-checker",
+    "editorconfig": "editorconfig-checker",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
+    "test": "npm run editorconfig && npm run stylelint",
     "start": "gulp"
   },
   "devDependencies": {
-      "editorconfig-checker": "^5.0.1",
-      "gulp": "^4.0.2"
+    "editorconfig-checker": "^5.0.1",
+    "gulp": "^4.0.2",
+    "stylelint": "^15.3.0",
+    "stylelint-config-standard-scss": "^7.0.1"
   },
   "browserslist": [
-      "last 2 versions",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all",
-      "not < 0.25%"
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
   ],
   "engines": {
-      "node": "^16"
+    "node": "^16"
   },
   "type": "module"
 }
