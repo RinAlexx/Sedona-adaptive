@@ -8,7 +8,7 @@
 
     <body class="page__body">
         <header class="site-header">
-            <a class="site-header__logo">
+            <a class="site-header__logo" href="index.html">
                 <svg width="102" height="84" viewBox="0 0 102 84" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип города Седона.">
                     <path d="M0 0L50.6 59.1L101.7 0H0Z" fill="#23A9E1"/>
                     <path d="M50.9 0H0V22.5L50.6 84L50.9 83.6L101.6 23.2V0H50.9ZM50.9 57.1L50.6 57.5L3.7 1.8H50.9H98.1L50.9 57.1Z" fill="#491213"/>
@@ -84,81 +84,113 @@
         <main class="main-container">
             <h1 class="visually-hidden">Информационный сайт города Седона</h1>
 
-            <header class="page-header">
+            <header class="page-header page-header--inner">
 
-                <img class="page-header__logo" width="282" height="214" src="images/intro-logo.svg" alt="Добро пожаловать в Седону!">
+                <img class="page-header__logo" width="229" height="39" src="images/intro-logo-inner.svg" alt="Добро пожаловать в Седону!">
 
-                <h2 class="page-header__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <h2 class="page-header__title">Оставьте свой отзыв</h2>
 
-                <p class="page-header__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                <p class="page-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
             </header>
 
-            <section class="advantages">
-                <h2 class="visually-hidden">Наши преимущества.</h2>
+            <section class="review">
+                <h2 class="visually-hidden">Заполните форму ниже.</h2>
+                <form class="review__form review-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <fieldset class="review-form__group form-name">
+                        <legend class="review-form__group-title">Представьтесь:</legend>
 
-                <div class="advantages__block advantages-important advantages-important--primary">
-                    <h3 class="advantages__header">Настоящий городок</h3>
-                    <span class="advantages__number">- №1 -</span>
-                    <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-                </div>
+                        <label class="form-name__label" for="name">Имя*:</label>
+                        <input class="form-name__input" type="text" name="name" id="name" placeholder="Петр" required>
 
-                <section class="advantages__list advices">
-                    <h2 class="visually-hidden">Полезные советы.</h2>
+                        <label class="form-name__label" for="surname">Фамилия*:</label>
+                        <input class="form-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
 
-                    <ul class="advices__list">
-                        <li class="advices__item">
-                            <h3 class="advices__header">Жилье</h3>
-                            <p class="advices__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                        </li>
-                        <li class="advices__item">
-                            <h3 class="advices__header">Еда</h3>
-                            <p class="advices__text">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
-                        </li>
-                        <li class="advices__item">
-                            <h3 class="advices__header">Сувениры</h3>
-                            <p class="advices__text">Не только китайского, но и местного производства!</p>
-                        </li>
-                    </ul>
-                </section>
+                        <label class="form-name__label" for="patronymic">Отчество:</label>
+                        <input class="form-name__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                    </fieldset>
 
-                <div class="advantages__block advantages-important advantages-important--secondary">
-                    <h3 class="advantages__header">Там есть мост дьявола</h3>
-                    <span class="advantages__number">- №2 -</span>
-                    <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-                </div>
+                    <fieldset class="review-form__group form-contacts">
+                        <legend class="review-form__group-title">Контактная информация:</legend>
 
-                <div class="advantages__list other-advantages">
-                    <ul class="other-advantages__list">
-                        <li class="other-advantages__item">
-                            <h3 class="advantages__header">Небольшая площадь</h3>
-                            <span class="advantages__number">- №3 -</span>
-                            <p class="advantages__text">Все интересные места находятся очень близко</p>
-                        </li>
-                        <li class="other-advantages__item">
-                            <h3 class="advantages__header">Красивая дорога</h3>
-                            <span class="advantages__number">- №4 -</span>
-                            <p class="advantages__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-                        </li>
-                        <li class="other-advantages__item">
-                            <h3 class="advantages__header">Мало туристов</h3>
-                            <span class="advantages__number">- №5 -</span>
-                            <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        <label class="form-name__label" for="phone">Контактный телефон*:</label>
+                        <input class="form-name__input" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
 
-            <section class="booking">
-                <h2 class="visually-hidden">Поиск отелей в Седоне.</h2>
-                <p class="booking__title">Заинтересовались?</p>
-                <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-                <a class="booking__button button" href="#">Найти гостиницу</a>
-            </section>
+                        <label class="form-name__label" for="email">Электронная почта*:</label>
+                        <input class="form-name__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                    </fieldset>
 
-            <section class="map">
-                <h2 class="visually-hidden">Седона на карте.</h2>
-                <img class="map__image" src="images/map-mobile.jpg" width="320" height="350" alt="Месторасположение Седоны на карте">
+                    <fieldset class="review-form__group form-impress">
+                        <legend class="review-form__group-title">Ваше общее впечатление:</legend>
+
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="impress" value="positive" checked>
+                                    <span></span>
+                                    <span>Скорее положительное</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="impress" value="negative">
+                                    <span></span>
+                                    <span>Скорее отрицательное</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="impress" value="difficult">
+                                    <span></span>
+                                    <span>Затрудняюсь ответить</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="review-form__group form-attractions">
+                        <legend class="review-form__group-title">Посещенные достопримечательности:</legend>
+
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="devil's-bridge" checked>
+                                    <span></span>
+                                    <span>Мост Дьявола</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="bell-rock" checked>
+                                    <span></span>
+                                    <span>Гора-Колокол</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="slide-park" checked>
+                                    <span></span>
+                                    <span>Слайд-парк</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="red-rock">
+                                    <span></span>
+                                    <span>Красные скалы</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="review-form__group form-comment">
+                        <legend class="review-form__group-title">Опишите свои эмоции:</legend>
+
+                        <textarea name="comment" cols="10" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
+                    </fieldset>
+
+                    <button class="review-form__button button" type="submit">Отправить отзыв</button>
+                </form>
             </section>
         </main>
 
